@@ -14,15 +14,15 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 **1. Clone / Download Repository:**
 * Clone or download this repository to your computer
 
-**2. Install Required Python Libraries:**  
+**2. Install Required Python Libraries:**     
 ```py -m pip install pandas mysql-connector-python sqlalchemy```
 
 **3. Download Kaggle Library:**
-* Download the kaggle library using the link below and put it into your project directory
+* Download the kaggle library using the link below and put it into your project directory   
 * https://www.kaggle.com/datasets/arnavvvvv/spotify-music
 
 **4. Configure MySQL Password:**
-* Look for the line of code near the bottom of the notebook that says update this password and add your MySQL password
+* Look for the line of code near the bottom of the notebook that says update this password and add your MySQL password   
 ``` mysql_password = 'YOURPASSWORDHERE' ```
 
 **5. Run the Entire Notebook:**
@@ -31,11 +31,11 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 **6. Run SQL Commands:**
 * Open up your MySQL command line and run the following commands to replicate our analysis
 
-* Count the number of songs in each key
+* Count the number of songs in each key   
 ``` SELECT `key`, COUNT(*) AS count FROM top_songs GROUP BY `key` ORDER BY count DESC; ```
-* Count the number of songs in each mode (chord major/minor)
+* Count the number of songs in each mode (chord major/minor)   
 ``` SELECT `mode`, COUNT(*) AS count FROM top_songs GROUP BY `mode` ORDER BY count DESC; ```
-* Count the number of songs in each BPM range
+* Count the number of songs in each BPM range   
 ``` SELECT 
     CASE 
         WHEN bpm < 100 THEN 'Slow (<100)'
