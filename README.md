@@ -32,7 +32,7 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 **6. Run SQL Commands:**
 * Open up your MySQL command line   
 * Run the command ``` SHOW databases; ``` and look for spotify_db  
-* Run the command ``` USE spotify_db ```
+* Run the command ``` USE spotify_db; ```
 * Run the following SQL commands to replicate our data analysis:
      
 
