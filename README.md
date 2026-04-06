@@ -26,6 +26,10 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 * Look for the line of code near the bottom of the notebook that says update this password and add your MySQL password   
 ``` mysql_password = 'YOURPASSWORDHERE' ```
 
+**5. Create the Database in MySQL:**   
+* Open the MySQL console and enter the command   
+```CREATE DATABASE spotify_db;```
+
 **5. Run the Entire Notebook:**
 * If all works, the .csv file should be properly cleaned and sent to your MySQL folder
 
