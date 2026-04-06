@@ -11,15 +11,7 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 
 ## How to Reproduce this Project
 
-**1. Database Setup:**
-* Install MySQL.
-* Run the scripts in the `/sql` folder in order:
-  * Execute `01_schema.sql` to build the database tables.
+**1. Clone / Download Repository:**
+* Clone or download this repository to your computer
 
-**2. Data Pipeline:**
-* Download the raw dataset from [Kaggle Link] and place it in a local `/data/raw` folder (Note: Raw data is excluded from this repo via .gitignore).
-* Open `/notebooks/01_data_cleaning.ipynb` and run all cells to clean the data and push it to the MySQL database.
-* Execute `02_analysis.sql` within your SQL environment to perform the core information extraction and ranking.
 
-**3. Visualization:**
-* Open `/notebooks/02_visualizations.ipynb` to pull the aggregated SQL insights and generate the final dashboards.
