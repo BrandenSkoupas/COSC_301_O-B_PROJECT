@@ -6,8 +6,8 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 ## Architecture & Tools
 * **Data Extraction & Cleaning:** Python (Pandas)
 * **Storage & Analytical Engine:** MySQL
-* **Visualization:** Python (Matplotlib / Seaborn)
-* **Documentation:** Excel (Data Dictionary)
+* **Visualization:** Excel
+* **Documentation:** Google Docs, Excel (Data Dictionary)
 
 ## How to Reproduce this Project
 
