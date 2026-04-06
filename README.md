@@ -18,7 +18,8 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 ```py -m pip install pandas mysql-connector-python sqlalchemy```
 
 **3. Download Kaggle Library:**
-* Download the kaggle library using the link below and put it into your project directory   
+* Download the kaggle library using the link below and put it into your project directory
+* Note: Make sure the kaggle file is named Popular_Spotify_Songs.csv     
 * https://www.kaggle.com/datasets/arnavvvvv/spotify-music
 
 **4. Configure MySQL Password:**
