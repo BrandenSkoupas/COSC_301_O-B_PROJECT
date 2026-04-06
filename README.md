@@ -14,7 +14,7 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 **1. Clone / Download Repository:**
 * Clone or download this repository to your computer
 
-**2. Install Required Python Libraries:**
+**2. Install Required Python Libraries:**  
 ```py -m pip install pandas mysql-connector-python sqlalchemy```
 
 **3. Download Kaggle Library:**
