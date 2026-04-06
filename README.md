@@ -37,7 +37,8 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 * Count the number of songs in each mode (chord major/minor)   
 ``` SELECT `mode`, COUNT(*) AS count FROM top_songs GROUP BY `mode` ORDER BY count DESC; ```
 * Count the number of songs in each BPM range      
-``` SELECT 
+``` 
+SELECT 
     CASE 
         WHEN bpm < 100 THEN 'Slow (<100)'
         WHEN bpm BETWEEN 100 AND 130 THEN 'Medium (100-130)'
@@ -49,7 +50,7 @@ GROUP BY tempo_range
 ORDER BY song_count DESC;
 ```
 * Average all used columns for all songs
-``` Full averages for all characteristics   
+```   
 SELECT 
     ROUND(AVG(bpm), 2) AS avg_bpm,
     ROUND(AVG(`danceability_%`), 2) AS avg_danceability,
@@ -62,7 +63,8 @@ SELECT
 FROM top_songs;
 ```
 * Year by year averages for all used columns for all songs   
-``` SELECT 
+``` 
+SELECT 
     released_year, 
     COUNT(*) AS total_hits,
     ROUND(AVG(bpm), 1) AS avg_bpm,
@@ -77,7 +79,8 @@ GROUP BY released_year
 ORDER BY released_year ASC;
 ```
 * Statistics on archetype combinations   
-``` SELECT 
+``` 
+SELECT 
     CASE 
         WHEN `danceability_%` >= 70 AND `energy_%` >= 70 THEN 'The Club Banger (High Dance/Energy)'
         WHEN `danceability_%` < 60 AND `acousticness_%` >= 50 THEN 'The Acoustic Ballad (Low Dance/High Acoustic)'
