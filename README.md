@@ -36,7 +36,7 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 ``` SELECT `key`, COUNT(*) AS count FROM top_songs GROUP BY `key` ORDER BY count DESC; ```
 * Count the number of songs in each mode (chord major/minor)   
 ``` SELECT `mode`, COUNT(*) AS count FROM top_songs GROUP BY `mode` ORDER BY count DESC; ```
-* Count the number of songs in each BPM range   
+* Count the number of songs in each BPM range      
 ``` SELECT 
     CASE 
         WHEN bpm < 100 THEN 'Slow (<100)'
@@ -49,7 +49,7 @@ GROUP BY tempo_range
 ORDER BY song_count DESC;
 ```
 * Average all used columns for all songs
-``` Full averages for all characteristics.
+``` Full averages for all characteristics   
 SELECT 
     ROUND(AVG(bpm), 2) AS avg_bpm,
     ROUND(AVG(`danceability_%`), 2) AS avg_danceability,
@@ -61,7 +61,7 @@ SELECT
     ROUND(AVG(`speechiness_%`), 2) AS avg_speechiness
 FROM top_songs;
 ```
-* Year by year averages for all used columns for all songs
+* Year by year averages for all used columns for all songs   
 ``` SELECT 
     released_year, 
     COUNT(*) AS total_hits,
@@ -76,7 +76,7 @@ FROM top_songs
 GROUP BY released_year
 ORDER BY released_year ASC;
 ```
-* Statistics on archetype combinations
+* Statistics on archetype combinations   
 ``` SELECT 
     CASE 
         WHEN `danceability_%` >= 70 AND `energy_%` >= 70 THEN 'The Club Banger (High Dance/Energy)'
