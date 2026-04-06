@@ -18,7 +18,7 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 ```py -m pip install pandas mysql-connector-python sqlalchemy```
 
 **3. Download Kaggle Library:**
-* Download the kaggle library using the link below and put it into your project directory
+* Download the kaggle library using the link below and put it into the raw folder: project directory > data > raw  
 * Note: Make sure the kaggle file is named Popular_Spotify_Songs.csv     
 * https://www.kaggle.com/datasets/arnavvvvv/spotify-music
 
@@ -30,7 +30,11 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 * If all works, the .csv file should be properly cleaned and sent to your MySQL folder
 
 **6. Run SQL Commands:**
-* Open up your MySQL command line and run the following commands to replicate our analysis
+* Open up your MySQL command line   
+* Run the command ``` SHOW databases; ``` and look for spotify_db  
+* Run the command ``` USE spotify_db ```
+* Run the following SQL commands to replicate our data analysis:
+     
 
 * Count the number of songs in each key   
 ``` SELECT `key`, COUNT(*) AS count FROM top_songs GROUP BY `key` ORDER BY count DESC; ```
