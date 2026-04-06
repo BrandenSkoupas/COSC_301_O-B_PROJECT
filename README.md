@@ -30,10 +30,10 @@ This project is an end-to-end data analytics pipeline analyzing the acoustic cha
 * Open the MySQL console and enter the command   
 ```CREATE DATABASE spotify_db;```
 
-**5. Run the Entire Notebook:**
+**6. Run the Entire Notebook:**
 * If all works, the .csv file should be properly cleaned and sent to your MySQL folder
 
-**6. Run SQL Commands:**
+**7. Run SQL Commands:**
 * Open up your MySQL command line   
 * Run the command ``` SHOW databases; ``` and look for spotify_db  
 * Run the command ``` USE spotify_db; ```
